@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razas de Personajes</title>
+</head>
+<body>
+    <h1>Razas de Personajes</h1>
+
+    {% for raza, personajes in razas.items %}
+        <h2>{{ raza }}</h2>
+        <ul>
+            {% for personaje in personajes %}
+                <li>{{ personaje }}</li>
+            {% empty %}
+                <li>No hay personajes de esta raza.</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
+</body>
+</html>
