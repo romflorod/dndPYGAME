@@ -1,6 +1,7 @@
 from django.db import models
 
 class Draconido(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     linaje_draconico = models.CharField(max_length=100, blank=True)
     ataque_de_aliento = models.CharField(max_length=100, blank=True)
@@ -11,6 +12,7 @@ class Draconido(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Elfo(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     linaje_feerico = models.BooleanField(default=True)
@@ -20,6 +22,7 @@ class Elfo(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Enano(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=25)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     fortaleza_enana = models.BooleanField(default=True)
@@ -30,6 +33,7 @@ class Enano(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Gnomo(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=25)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     astucia_de_gnomo = models.BooleanField(default=True)
@@ -38,6 +42,7 @@ class Gnomo(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Humano(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     alineamiento = models.CharField(max_length=100, default="Varía ampliamente")
     idiomas = models.CharField(max_length=100, default="Común y un idioma adicional de elección")
@@ -50,6 +55,7 @@ class Humano(models.Model):
     edad = models.PositiveIntegerField(default=100)
 
 class Mediano(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=25)
     idiomas = models.CharField(max_length=100, default="Común, Mediano")
     agilidad_de_los_medianos = models.BooleanField(default=True)
@@ -59,6 +65,7 @@ class Mediano(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Semielfo(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     ancestro_feerico = models.BooleanField(default=True)
@@ -68,6 +75,7 @@ class Semielfo(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Semiorco(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     aguante_incansable = models.BooleanField(default=True)
@@ -78,6 +86,7 @@ class Semiorco(models.Model):
     edad = models.PositiveIntegerField(default=500)
 
 class Tiefling(models.Model):
+    nombre = models.CharField(max_length=100)
     velocidad = models.PositiveIntegerField(default=30)
     vision_en_la_oscuridad = models.BooleanField(default=True)
     legado_infernal = models.BooleanField(default=True)
