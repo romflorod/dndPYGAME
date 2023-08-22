@@ -23,4 +23,7 @@ urlpatterns = [
     path('mostrar_razas/', views.mostrar_razas),
     path('home/', views.home, name='home'),  # Agrega esta URL para la vista de la página de inicio
     path('register/', views.register, name='register'),  # Agrega esta URL para la vista de registro
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+
 ]
